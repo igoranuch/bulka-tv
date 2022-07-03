@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="content.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="content.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,10 +20,12 @@
 
 <body>
     <header>
+
         <div class="logo-container">
             <img src="/images/logo.svg" id="logo-cat">
             <span>Bulka TV</span>
         </div>
+
         <div class="search-container">
             <input type="search" placeholder="Search">
             <div id="search-btn-container">
@@ -38,20 +42,24 @@
                 <path
                     d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z" />
             </svg>
+
             <div id="cat-paw-container">
                 <svg id="cat-paw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                         d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z" />
                 </svg>
+
                 <div class="menu-container">
                     <div class="category">
                         <img src="/images/profile.svg">
                         <span>Profile</span>
                     </div>
+
                     <div class="category">
                         <img src="/images/setings.svg">
                         <span>Settings</span>
                     </div>
+
                     <div class="category log-out">
                         <img src="/images/logout.svg">
                         <span>Log Out</span>
@@ -63,54 +71,103 @@
 
     <aside>
         <div class="users-list">
-            <div class="user-block">
+            <div class="user-block user-block1">
+                <div class="avatar">
+                    <img src="/images/avatars/topson.png">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>Topson</span>
+                    </div>
+                    <div class="viewers-block">
+                        <img src="/images/Location_dot_red.svg">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
             <div class="user-block">
+                <div class="avatar">
+                    <img src="/images/avatars/aloha.png">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>Aloha</span>
+                    </div>
+                    <div class="viewers-block">
+                        <img src="/images/Location_dot_red.svg">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
             <div class="user-block">
+                <div class="avatar">
+                    <img src="/images/avatars/mel.png">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>Mel</span>
+                    </div>
+                    <div class="viewers-block">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
             <div class="user-block">
+                <div class="avatar">
+                    <img src="/images/avatars/dota.png">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>Arthas</span>
+                    </div>
+                    <div class="viewers-block">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
             <div class="user-block">
+                <div class="avatar">
+                    <img src="/images/avatars/stray.jpeg">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>Stray</span>
+                    </div>
+                    <div class="viewers-block">
+                        <img src="/images/Location_dot_red.svg">
+                        <p>5.3k</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-block corrected">
+                <div class="avatar">
+                    <img src="/images/avatars/dendi.png">
+                </div>
+                <div class="user-info">
+                    <div class="username">
+                        <span>Dendi</span>
+                    </div>
+                    <div class="viewers-block">
+                        <img src="/images/Location_dot_red.svg">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
             <div class="user-block">
+                <div class="avatar">
+                    <img src="/images/avatars/silverbuba.png">
+                </div>
                 <div class="user-info">
-
+                    <div class="username">
+                        <span>SilverName</span>
+                    </div>
+                    <div class="viewers-block">
+                        <p>5.3k</p>
+                    </div>
                 </div>
             </div>
-            <div class="user-block">
-                <div class="user-info">
-
-                </div>
-            </div>
-            <div class="user-block">
-                <div class="user-info">
-
-                </div>
-            </div>
-            <div class="user-block">
-                <div class="user-info">
-
-                </div>
-            </div>
-
-
         </div>
+
         <div class="contact-block">
             <div class="contact-inner">
                 <p>Join the Bulka's community!</p>
@@ -133,7 +190,9 @@
     </aside>
 
     <div class="content">
+
     </div>
+
 </body>
 
 </html>

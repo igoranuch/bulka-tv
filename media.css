@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+  .contact-block {
+    display: none;
+  }
+
+  .user-info {
+    display: none;
+  }
+
+  aside {
+    width: 50px;
+  }
+}
