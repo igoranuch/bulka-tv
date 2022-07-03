@@ -19,10 +19,6 @@ aside {
   font-weight: bold;
 }
 
-.users-list::-webkit-scrollbar {
-  display: none;
-}
-
 .user-block {
   display: flex;
   height: 65px;

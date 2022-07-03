@@ -10,4 +10,9 @@
   aside {
     width: 50px;
   }
+
+  main {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
 }
