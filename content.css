@@ -1,0 +1,8 @@
+.content {
+  position: relative;
+  top: 66px;
+  left: 240px;
+  width: calc(100% - 240px);
+  height: 100%;
+  z-index: 1;
+}
