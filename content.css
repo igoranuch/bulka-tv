@@ -10,8 +10,10 @@ main {
   min-height: calc(100vh - 66px);
 }
 
-content {
-  padding: 15px;
+.categories-cont {
+  height: 65px;
+  display: flex;
+  align-items: center;
 }
 
 .categories {
@@ -42,4 +44,121 @@ content {
   background-color: #f6af44;
   border: 1px solid #f5a52e;
   color: white;
+}
+
+content {
+  padding: 0px 15px 0px 15px;
+}
+
+.video-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 15px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.preview img {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.options > img {
+  width: 6px;
+}
+
+.options > img:hover {
+  cursor: pointer;
+}
+
+.description > .avatar:hover {
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: calc(100% - 48px);
+}
+
+.video-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.video-name:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 14px;
+  color: gray;
+}
+.user-name:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.info p {
+  flex: 1;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.play-paw {
+  fill: white;
+  width: 48px;
+  height: 48px;
+}
+
+.hovered-video {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.preview:hover .hovered-video {
+  display: flex;
+}
+
+.preview:hover svg {
+  cursor: pointer;
 }

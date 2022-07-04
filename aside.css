@@ -34,11 +34,8 @@ aside {
 }
 
 .avatar {
-  display: flex;
-}
-
-.avatar > img {
   width: 32px;
+  height: 32px;
   border-radius: 100%;
 }
 
@@ -69,6 +66,10 @@ aside {
 
 .viewers-block img {
   width: 10px;
+}
+
+.ofline {
+  display: none;
 }
 
 .contact-block {
@@ -115,4 +116,5 @@ aside {
 
 .contact-icons svg:hover {
   fill: #27a3e2;
+  cursor: pointer;
 }
